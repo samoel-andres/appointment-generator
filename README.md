@@ -31,7 +31,7 @@ Esta herramienta genera citas aleatorias asignando fechas y turnos (Matutino/Ves
 
 2. **Ejecutar la aplicación:**
    ```bash
-   npm start
+   npx ts-node app
    ```
    Esto generará un archivo `generated_appointments.xlsx` en el directorio `/files/output/` con las citas asignadas.
 
@@ -43,16 +43,18 @@ Esta herramienta genera citas aleatorias asignando fechas y turnos (Matutino/Ves
 ## Ejemplo de uso
 
 ### 1. Ejecución de la aplicación:
-Despues de ejecutar el comando `npm start`, deberías ver la siguiente salida en la consola:
+Despues de ejecutar el comando `npx ts-node app`, deberías ver la siguiente salida en la consola:
+
+![Interfaz principal](evidence/execute.JPG)
+
+### 2. Archivo de entrada (`input.txt`):
+El archivo `input.txt` debe contener una lista de folios, uno por línea:
 | 120463501 |
 |-----------|
 | 120404844 |
 | 120464924 |
 | 120464133 |
 | 120464950 |
-
-### 2. Archivo de entrada (`input.txt`):
-El archivo `input.txt` debe contener una lista de folios, uno por línea:
 
 ### 3. Resultado generado (`generated_appointments.xlsx`):
 El archivo de salida `generated_appointments.xlsx` contiene las citas generadas, con un formato similar a:
