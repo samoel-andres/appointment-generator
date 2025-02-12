@@ -44,6 +44,12 @@ Esta herramienta genera citas aleatorias asignando fechas y turnos (Matutino/Ves
 
 ### 1. Ejecución de la aplicación:
 Despues de ejecutar el comando `npm start`, deberías ver la siguiente salida en la consola:
+| 120463501 |
+|-----------|
+| 120404844 |
+| 120464924 |
+| 120464133 |
+| 120464950 |
 
 ### 2. Archivo de entrada (`input.txt`):
 El archivo `input.txt` debe contener una lista de folios, uno por línea:
