@@ -25,7 +25,7 @@ const availableDates = (n: number): Array<string> => {
         } while (dateCount.get(newDate) >= 10 || attemptCounter === 70)
 
         // Add the generated date to the appointment array
-        availableDates.push(newDate)
+        availableDates.push(String(newDate))
 
         // Update the appointment count
         dateCount.set(newDate, (dateCount.get(newDate) || 0) + 1)
@@ -49,7 +49,7 @@ const defineShift = (n: number): Array<string> => {
 
     for (let i = 0; i < n; i++) {
         let numRandom = Math.floor(Math.random() * 153)
-        availableTime.push(numRandom % 2 === 0 ? 'Matutino' : 'Vespertino')
+        availableTime.push(numRandom % 2 === 0 ? 'MATUTINO' : 'VESPERTINO')
     }
 
     return availableTime
